@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+	int main()
+{
+
+string s2("Welcome");
+s2.append(" to C and Cpp", 3, 6); 
+cout << s2 << endl;
+
+	return 0;
+} 
