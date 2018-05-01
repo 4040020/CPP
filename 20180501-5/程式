@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+	int main()
+{
+
+	string s4("Welcome"); 
+s4.append(14, 'F'); 
+cout << s4 << endl; 
+
+	return 0;
+} 
