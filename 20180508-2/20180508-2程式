@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+
+	string s1("Welcome");
+	s1.assign("Dallas");
+	s1.append("to C++");
+	cout<<s1<<endl;
+	
+	string s2("Welcome");
+	s2.assign("Dallas.Texas",0,5);
+	s2.append("to C and C++",0,8);
+	cout<<s2<<endl;
+	
+	string s3("Welcome");
+	s3.append("to C and C++", 9);
+	s3.assign("Dallas. Texas", 5);
+	cout<<s3<<endl;
+	
+	string s4("Welcome");
+	s4.assign(4,'Y');
+	cout<<s4<<endl;
+  return 0;
+}
