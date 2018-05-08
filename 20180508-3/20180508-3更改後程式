@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+void ShowMessage(); //函式宣告語句
+void ShowAge(); //函式宣告語句
+void ShowIndex(); //函式宣告語句
+int main()
+{
+	ShowMessage(); //函式呼叫語句
+	ShowAge(); //函式呼叫語句
+	ShowIndex(); //函式呼叫語句
+}
+void ShowMessage()
+{
+	cout << "王O復認為恩師=神" << endl;
+}
+void ShowAge()
+{
+	int iAge=20;
+	cout << "我的年紀是 :" << iAge << endl;
+}
+void ShowIndex()
+{
+	int iIndex=20;
+	cout << "我學號末兩碼:" << iIndex << endl;
+
+}
+
