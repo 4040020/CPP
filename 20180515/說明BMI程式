@@ -1,18 +1,18 @@
 --------------------------------------------------------BIM.cpp
-#include <iostream>
-#include "BMI.h"
-using namespace std;
+#include <iostream>                                                     載入表準函示庫
+#include "BMI.h"                                                        載入.h檔
+using namespace std;                                                    使用std這個命名空間
 
-BMI::BMI(const string& newName, int newAge, 
+BMI::BMI(const string& newName, int newAge,                             
   double newWeight, double newHeight)
 {
-  name = newName;
-  age = newAge;
-  weight = newWeight;
-  height = newHeight;
+  name = newName;                                                      從新定義name為newName
+  age = newAge;                                                        從新定義age為newAge
+  weight = newWeight;                                                  從新定義weight為weight
+  height = newHeight;                                                  從新定義 height為 height
 }
 
-BMI::BMI(const string& newName, double newWeight, double newHeight)
+BMI::BMI(const string& newName, double newWeight, double newHeight)    給BMI 4個  
 {
   name = newName;
   age = 20;
