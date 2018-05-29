@@ -42,7 +42,7 @@ int StackOfIntegers::peek() const	   //取出最上層的資料實作
 
 void StackOfIntegers::push(int value)	//
 {
-  elements[size++] = value;         //
+  elements[size++] = value;         //(看圖45圖註解)
 }
 
 int StackOfIntegers::pop()         //
