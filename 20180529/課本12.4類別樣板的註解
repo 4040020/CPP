@@ -37,19 +37,19 @@ bool StackOfIntegers::isEmpty() const	//測試是否為空的實作
 
 int StackOfIntegers::peek() const	   //取出最上層的資料實作 
 {
-  return elements[size - 1];          //
+  return elements[size - 1];          //回傳elements類別size - 1的值
 }
 
-void StackOfIntegers::push(int value)	//
+void StackOfIntegers::push(int valu)	//類別StackOfIntegers丟入一個整數value(不回傳值的參數)
 {
   elements[size++] = value;         //(看圖45圖註解)
 }
 
-int StackOfIntegers::pop()         //
+int StackOfIntegers::pop()         //取整數StackOfIntegers最上層資料的實作
 {
-  return elements[--size];         //
+  return elements[--size];         //看圖50圖註解(看圖50圖註解)
 
-int StackOfIntegers::getSize() const
+int StackOfIntegers::getSize() const//取得StackOfIntegers資料大小
 {
   return size; 
 }
