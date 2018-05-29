@@ -52,5 +52,5 @@ int StackOfIntegers::pop()				//
 
 int StackOfIntegers::getSize() const
 {
-  return size;
+  return size; 
 }
