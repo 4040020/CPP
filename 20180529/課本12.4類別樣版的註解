@@ -57,8 +57,8 @@ int StackOfIntegers::getSize() const//取得StackOfIntegers資料大小
 
 TestStackOfIntegers.cpp
 
-#include <iostream>
-#include "StackOfIntegers.h"
+#include <iostream>                 載入標頭檔iostream
+#include "StackOfIntegers.h"        載入StackOfIntegers.h
 using namespace std;
 
 int main()
