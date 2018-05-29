@@ -37,7 +37,7 @@ bool StackOfIntegers::isEmpty() const	//測試是否為空的實作
 
 int StackOfIntegers::peek() const		//取出最上層的資料實作 
 {
-  return elements[size - 1];			  //
+  return elements[size - 1];			  //先把size帶入再-1
 }
 
 void StackOfIntegers::push(int value)	//
@@ -47,7 +47,7 @@ void StackOfIntegers::push(int value)	//
 
 int StackOfIntegers::pop()			  	//
 {
-  return elements[--size];
+  return elements[--size];         先-1再帶入size
 }
 
 int StackOfIntegers::getSize() const
