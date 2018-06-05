@@ -65,11 +65,11 @@ int main()
 {
   StackOfIntegers stack;           //使用整數堆疊
 
-  for (int i = 0; i < 10; i++)
-    stack.push(i);
+  for (int i = 0; i < 10; i++)     //用迴圈(for(讓i=0 i小於10時進行i+1動作))
+    stack.push(i);                 //將資料i放入堆疊頂端
 
-  while (!stack.isEmpty())
-    cout << stack.pop() << " ";
+  while (!stack.isEmpty())         //判斷是否為0
+    cout << stack.pop() << " ";    //印出堆疊現在的值
 
-  return 0;
+  return 0;                        //回傳0整數
 }
