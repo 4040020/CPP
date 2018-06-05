@@ -59,11 +59,11 @@ TestStackOfIntegers.cpp
 
 #include <iostream>                 載入標頭檔iostream
 #include "StackOfIntegers.h"        載入StackOfIntegers.h
-using namespace std;
+using namespace std;                使用namespace std這個命名空間
 
 int main()
 {
-  StackOfIntegers stack;
+  StackOfIntegers stack;            
 
   for (int i = 0; i < 10; i++)
     stack.push(i);
