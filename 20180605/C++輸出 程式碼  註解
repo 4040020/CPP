@@ -10,12 +10,12 @@ int main()
 
   output.open("d:///scores.txt");                     在D槽打開一個叫scores的txt文字檔
 
-  output << "John" << " " << "T" << " " << "Smith"    將文字(John T Smith 90)寫入於scores文字檔 換行
-    << " " << 90 << endl;
-  output << "Eric" << " " << "K" << " " << "Jones"     將文字(Eric K Jones 85)寫入於scores文字檔 換行
-    << " " << 85 << endl;
-  output << "周" << " " << "J" << " " << "志學"        將文字(周 J 志學 10)寫入於scores文字檔 換行
-    << " " << 10 << endl;
+  output << "John" << " " << "T" << " " << "Smith"    
+    << " " << 90 << endl;                             將文字(John T Smith 90)寫入於scores文字檔 換行
+  output << "Eric" << " " << "K" << " " << "Jones"    
+    << " " << 85 << endl;                             將文字(Eric K Jones 85)寫入於scores文字檔 換行
+  output << "周" << " " << "J" << " " << "志學"        
+    << " " << 10 << endl;                             將文字(周 J 志學 10)寫入於scores文字檔 換行
 
 
   output.close();
