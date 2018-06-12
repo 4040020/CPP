@@ -1,0 +1,35 @@
+//檔案讀取資料 
+#include <iostream>                                        //載入標準函示庫
+#include <fstream>                                         //載入fstream物件處理檔案輸入輸出
+#include <string>                                          //載入字串函示庫
+using namespace std;                                       //使用一個std的命名空間 
+
+int main()
+{
+  ifstream input("d:\\scores.txt");                         //將D槽的score.txt黨載入 
+
+  // Read data
+  string firstName;                                         //將 firstName定義成字串型態 
+  char mi;                                                  //將 mi定義為字元型態 
+  string lastName;                                          //將 lastName定義成字串型態 
+  int score;                                                //將 score定義為整數型態 
+  
+  input >> firstName >> mi >> lastName >> score;            //將在下2行做解釋 
+  cout << firstName << " " << mi << " " << lastName << " "  //將在下1行做解釋 
+    << score << endl;                                       //將在D槽scores.txt的資料第一行John T Smith 90分別丟入剛定義的資料型態 
+                                                            //等同 john丟入 firstName   T丟入mi  Smith丟入 lastName  90丟入score
+  input >> firstName >> mi >> lastName >> score;            //將在下2行做解釋 
+  cout << firstName << " " << mi << " " << lastName << " "  //將在下1行做解釋
+    << score << endl;                                       //將在D槽scores.txt的資料第二行Eric K Jones 85分別丟入剛定義的資料型態 
+                                                            //等同 Eric丟入 firstName   K丟入mi  Jones丟入 lastName  85丟入score
+  input >> firstName >> mi >> lastName >> score;            //將在下2行做解釋  
+  cout << firstName << " " << mi << " " << lastName << " "  //將在下1行做解釋 
+    << score << endl;                                       //將在D槽scores.txt的資料第一行周 J 志學 10分別丟入剛定義的資料型態  
+                                                            //等同 周丟入 firstName   J丟入mi  治學丟入 lastName  10丟入score 
+                                                            
+  input.close();                                             //將打開的scores文字檔關閉不再使用 
+
+  cout << "Done" << endl;                                   //最後將Done文字顯示換行(不管找不到的到scores檔都會顯示出Done) 
+
+  return 0;                                                 //程式最後回傳整數0程式結束 
+}
