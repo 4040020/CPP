@@ -6,7 +6,7 @@ GeometricObjectGeometricObjct::GeometricObject()            //GeometricObject ()
   filled = false;                                    同上一行//GeometricObject中的color顯示不填滿白色
 }                                                           //"繼承"後"擴充"GeometricObject類別"結束"
 
-________::GeometricObject(const string& color, bool filled) //"擴充"GeometricObject類別 加入字串string& color 加入bool filled值
+GeometricObject::GeometricObject(const string& color, bool filled) //"擴充"GeometricObject類別 加入字串string& color 加入bool filled值
 {                                                           //"繼承"後"擴充"GeometricObject類別"開始"
   this->color = color;                                      //將color值(針)"帶入"this(針)指向color
   this->filled = filled;                                    //將filled值(針)"帶入" this(針)指向filled
