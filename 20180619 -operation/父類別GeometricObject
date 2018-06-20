@@ -1,10 +1,10 @@
 #include "GeometricObject.h"
 
-___GeometricObjectGeometricObjct_____::GeometricObject()                         //GeometricObject()繼承GeometricObject類別
-{
-  color = "white";
-  filled = false;
-}
+___GeometricObjectGeometricObjct_____::GeometricObject()           //GeometricObject ()繼承GeometricObject類別
+{                                                                  //繼承後擴充GeometricObject類別"開始"
+  color = "white";                                                 //將GeometricObject中cplor丟入顏色white(丟入白色顏色)
+  filled = false;                                                  //GeometricObject中的color顯示不填滿白色
+}                                                                  //繼承後擴充GeometricObject類別"結束"
 
 ________::GeometricObject(const string& color, bool filled)
 {
