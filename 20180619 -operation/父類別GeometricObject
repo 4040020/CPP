@@ -1,16 +1,16 @@
 #include "GeometricObject.h"
 
-___GeometricObjectGeometricObjct_____::GeometricObject()    //GeometricObject ()繼承GeometricObject類別      (也可說是引用GeometricObject)
-{                                                           //繼承後擴充GeometricObject類別"開始"
+___GeometricObjectGeometricObjct_____::GeometricObject()    //GeometricObject ()"繼承"GeometricObject類別    (也可說是引用GeometricObject)
+{                                                           //"繼承"後"擴充"GeometricObject類別"開始"
   color = "white";                                          //將GeometricObject中cplor丟入顏色white(丟入白色顏色)
   filled = false;                                    同上一行//GeometricObject中的color顯示不填滿白色
-}                                                           //繼承後擴充GeometricObject類別"結束"
+}                                                           //"繼承"後"擴充"GeometricObject類別"結束"
 
-________::GeometricObject(const string& color, bool filled) //擴充GeometricObject類別 參數string& color變更為字串值 加入bool filled值
-{                                                           //繼承後擴充GeometricObject類別"開始"
-  this->color = ____color____;                              //將______值(針)帶入this(針)指向color
-  ____this___->filled = filled;                             //將filled值(針)帶入______(針)指向filled
-}                                                           //繼承後擴充GeometricObject類別"結束"
+________::GeometricObject(const string& color, bool filled) //"擴充"GeometricObject類別 參數string& color變更為字串值 加入bool filled值
+{                                                           //"繼承"後"擴充"GeometricObject類別"開始"
+  this->color = ____color____;                              //將______值(針)"帶入"this(針)指向color
+  ____this___->filled = filled;                             //將filled值(針)"帶入"______(針)指向filled
+}                                                           //"繼承"後"擴充"GeometricObject類別"結束"
 
 ________ GeometricObject::getColor() const
 {
