@@ -12,7 +12,7 @@ GeometricObject::GeometricObject(const string& color, bool filled) //"擴充"Geo
   this->filled = filled;                                           //將filled值(針)"帶入" this(針)指向filled
 }                                                                  //"繼承"後"擴充"GeometricObject類別"結束"
 
-string GeometricObject::getColor() const                         //
+string GeometricObject::getColor() const                           //
 {
   return ________;
 }
